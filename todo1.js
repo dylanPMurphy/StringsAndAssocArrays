@@ -26,8 +26,18 @@ function squish(input_string){
 // Create a JavaScript function that given a string, 
 // returns the integer made from the string’s digits. Given "0s1a3y5w7h9a2t4?6!8?0", 
 // the function should return the number 1357924680.
+function getDigits(input_string){
+    output_string = '';
+    for(var i=0;i<input_string.length;i++){
+        if( input_string[i].charCodeAt(0) >= 47&&input_string[i].charCodeAt(0) <=57){
+            output_string +=input_string[i];
+        }
 
+    }
+    return output_string;
+}
 
+// console.log(getDigits("0s1a3y5w7h9a2t4?6!8?0"))
 // Acronyms
 
 // Create a function that, given a string, 
