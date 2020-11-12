@@ -7,6 +7,18 @@
 // but without blanks. 
 
 // If given the string " Pl ayTha tF u nkyM usi c ", return "PlayThatFunkyMusic".
+function squish(input_string){
+    output_string = '';
+    for(var i=0;i<input_string.length;i++){
+        if(input_string[i]!=' '){
+            output_string +=input_string[i];
+        }
+
+    }
+    return output_string;
+}
+// console.log(squish('sdfsdf sd fsd g sdfg sd f qawef ewf   s  dsf         s dfsdfsf s df s df'));
+
 
 
 // Get Digits
